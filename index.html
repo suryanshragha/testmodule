@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RPS.css">
+    <title>RockPaperScissors</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="RPS">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+            <div class="computer score">
+                <p>COMPUTER</p>
+                <P>SCORE</P>
+                <h1>0</h1>     
+            </div>
+            <div class="Your score">
+                <p>YOUR</p>
+                <P>SCORE</P>
+                <h1>0</h1>
+            </div>
+
+        </div>
+        <div class="pick hands">
+            <div class=" hand ROCK "><img src="icons8-fist-67 1.png" onclick="pickhand('ROCK')"></div>
+            <div class=" hand SCISSORS "><img src="17911 1.png" onclick="pickhand('SCISSORS')"></div>
+            <div class=" hand PAPER "><img src="icons8-hand-64 1.png" onclick="pickhand('PAPER')"></div>
+        </div>
+        <div class="rules" >
+         <div id="gamerules" class="gamerules-content">
+            <button class="close" id="closebtn" onclick="cross()">x</button>
+              <h1>GAME RULES</h1>
+              <ul>
+            <li>Rock beats scissors, scissors beat<br> 
+                paper,and paper beats rock.<br><br>
+            </li>
+            <li>Agree ahead of time wheather you'll<br>
+                count off "rock, paper,scissors,<br>
+                shoot" or just "rock,paper,scissors."<br><br>
+            </li>
+            <li>Use rock,paper,scissors to settle<br>
+                minor decisions or simply play to <br>
+                pass the time<br><br>
+            </li>
+            <li>If both players lay down the same<br>
+                 hand, each players lays down another<br>
+                hand<br>
+            </li>
+              </ul>
+         </div>
+         <button id="rulebtn" class="button" onclick="rules()"> RULES</button>
+         <button id="nextbtn" class="button next" onclick="next()"href="next.html">NEXT</button>
+        </div>
+         <div class=" contest" >
+            <div class="userpickedimg">
+                <h5>YOU PICKED</h5>
+                <div class= "userpicked"><img id="userid" src="icons8-hand-64 1.png"></div>
+            </div>
+            <div class="refree">
+                <div class="decision"><h1>YOU WIN</h1></div>  
+                <h3>AGAINST PC</h3>
+                <button class="newgame" onclick="restartGame()">PLAY AGAIN</button>
+            </div>
+            <div class="computerpickedimg">
+                <h5>PC PICKED</h5>
+                <div class="computerpicked" ><img id="computerid" src="17911 1.png"></div>
+             </div>
+         </div>
+        
+        
+    </div>
+    <script src="RPS.js"></script>
+        
+    
+</body>
+</html>
